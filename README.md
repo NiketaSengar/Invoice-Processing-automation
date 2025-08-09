@@ -15,3 +15,19 @@ It combines Streamlit for an easy-to-use UI, MySQL for data storage, and Seleniu
 🌐 Form Auto-Filling with Selenium WebDriver
 
 🎯 Handles fields like invoice number, order date, shipping mode, item details, amounts, and more
+## 🛠️ Tech Stack
+Python 3.10+
+
+Streamlit – For front-end UI
+
+MySQL – For storing extracted invoice data
+
+pdf2image – For converting PDF to images
+
+docquery – For document question-answering
+
+Selenium – For browser automation
+
+HTML/CSS – Form UI design
+
+
