@@ -1,0 +1,13 @@
+python==3.10
+streamlit
+transformers==4.23
+import re
+pdf2image 
+docquery 
+mysql.connector
+os
+selenium
+chromedriver
+datetime
+re
+pip install "pydantic<2
