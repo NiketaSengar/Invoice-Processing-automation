@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        form {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            max-width: 600px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            margin: auto;
+        }
+        input[type="text"], input[type="number"], input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            font-weight: bold;
+        }
+        .btn-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn {
+            background-color: #28a745;
+            color: white;
+        }
+        .autofill-btn {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align:center;">Invoice Entry Form</h2>
+
+    <form id="invoiceForm">
+        <label for="row_id">Row ID</label>
+        <input type="text" id="row_id" name="row_id">
+
+        <label for="order_date">Order Date</label>
+        <input type="text" id="order_date" name="order_date">
+
+        <label for="ship_mode">Ship Mode</label>
+        <input type="text" id="ship_mode" name="ship_mode">
+
+        <label for="bill_to">Bill To</label>
+        <input type="text" id="bill_to" name="bill_to">
+
+        <label for="balance_due">Balance Due</label>
+        <input type="text" id="balance_due" name="balance_due">
+
+        <label for="item_name">Item Name</label>
+        <input type="text" id="item_name" name="item_name">
+
+        <label for="quantity">Quantity</label>
+        <input type="text" id="quantity" name="quantity">
+
+        <label for="rate">Rate</label>
+        <input type="text" id="rate" name="rate">
+
+        <label for="amount">Amount</label>
+        <input type="text" id="amount" name="amount">
+
+        <label for="subtotal">Subtotal</label>
+        <input type="text" id="subtotal" name="subtotal">
+
+        <label for="discount">Discount</label>
+        <input type="text" id="discount" name="discount">
+
+        <label for="shipping_fee">Shipping Fee</label>
+        <input type="text" id="shipping_fee" name="shipping_fee">
+
+        <label for="total_amount">Total Amount</label>
+        <input type="text" id="total_amount" name="total_amount">
+
+        <label for="order_id">Order ID</label>
+        <input type="text" id="order_id" name="order_id">
+
+        <div class="btn-row">
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="button" class="autofill-btn" onclick="alert('Auto fill triggered (use Selenium or JS)')">Auto fill the form</button>
+        </div>
+    </form>
+
+</body>
+</html>
